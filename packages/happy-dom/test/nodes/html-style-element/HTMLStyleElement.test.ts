@@ -43,6 +43,13 @@ describe('HTMLStyleElement', () => {
 
 	describe(`set disabled()`, () => {
 		it('Sets attribute value.', () => {
+			element.disabled = false;
+			expect(element.getAttribute('disabled')).toBe('false');
+		});
+	});
+
+	describe(`set disabled()`, () => {
+		it('Sets attribute value.', () => {
 			element.disabled = true;
 			expect(element.getAttribute('disabled')).toBe('');
 		});
